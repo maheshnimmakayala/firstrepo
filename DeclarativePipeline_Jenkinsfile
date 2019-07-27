@@ -27,7 +27,7 @@ pipeline
             steps
             {
                sshagent(['tomcat-cred']) {
-        sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/Declarative_Pipeline/webapp/target/webapp.war ec2-user@172.31.89.204:/opt/apache-tomcat-8.5.43/webapps/'
+        sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/first-job/webapp/target/webapp.war ec2-user@172.31.89.204:/opt/apache-tomcat-8.5.43/webapps/'
              }
 
             }
